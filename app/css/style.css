@@ -107,4 +107,8 @@ button,
 .header__cta {
   font-size: 0.875rem;
   color: hsl(0deg, 0%, 100%);
+  transition: opacity 300ms ease-in-out;
+}
+.header__cta:hover {
+  opacity: 0.75;
 }/*# sourceMappingURL=style.css.map */

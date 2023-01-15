@@ -51,3 +51,16 @@ button,
   color: $white;
   font-weight: 400;
 }
+
+//Visibility
+.hide-for-mobile {
+  @include breakpoints-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoints-up(large) {
+    display: none;
+  }
+}

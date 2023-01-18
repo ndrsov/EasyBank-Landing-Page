@@ -1,1 +1,5 @@
-console.log("Hello world!");
+const btnHamburger = document.querySelector("#btnHamburger");
+
+btnHamburger.addEventListener("click", () => {
+  btnHamburger.classList.toggle("open");
+});

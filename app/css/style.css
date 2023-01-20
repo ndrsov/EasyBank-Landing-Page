@@ -122,4 +122,13 @@ button,
 }
 .header__cta:hover {
   opacity: 0.75;
+}
+
+.overlay {
+  position: fixed;
+  top: 3.75rem;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: linear-gradient(hsl(233deg, 26%, 24%), transparent);
 }/*# sourceMappingURL=style.css.map */

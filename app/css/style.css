@@ -90,6 +90,10 @@ a:hover {
   text-decoration: none;
 }
 
+.container {
+  padding: 1.0625rem 1.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -143,9 +147,6 @@ button,
   bottom: 0px;
   left: 0px;
   background-image: linear-gradient(hsl(233deg, 26%, 24%), transparent);
-}
-.header nav {
-  padding: 1.0625rem 1.5rem;
 }
 .header__logo img {
   width: 8.8125rem;

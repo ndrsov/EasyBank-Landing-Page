@@ -168,6 +168,22 @@ button,
 .header__toggle > span:not(:last-child) {
   margin-bottom: 5px;
 }
+.header__menu {
+  position: absolute;
+  width: calc(100% - 3rem);
+  left: 50%;
+  transform: translateX(-50%);
+  background: hsl(0deg, 0%, 100%);
+  padding: 1.625rem;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+}
+.header__menu a {
+  display: block;
+  color: hsl(233deg, 26%, 24%);
+  padding: 0.625rem;
+  text-align: center;
+}
 .header__links a {
   position: relative;
   font-size: 0.875rem;

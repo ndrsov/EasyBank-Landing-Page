@@ -35,6 +35,7 @@
     text-align: center;
 
     @include breakpoints-up(large) {
+      text-align: left;
       flex: 2;
       order: 1;
     }
@@ -44,6 +45,9 @@
       line-height: 1.15;
       color: $darkBlue;
       margin-bottom: 1.5rem;
+      @include breakpoints-up(large) {
+        font-size: $font-xl;
+      }
     }
     p {
       line-height: 1.5;

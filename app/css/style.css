@@ -272,7 +272,7 @@ button:hover,
   background-color: hsl(0deg, 0%, 98%);
 }
 @media (min-width: 64em) {
-  .hero {
+  .hero .container {
     display: flex;
     align-items: center;
   }

@@ -3,15 +3,31 @@
   color: $white;
   padding: 2.5rem;
   text-align: center;
+
+  @include breakpoints-up(large) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      'logo links1 links2 cta'
+      'social links1 links2 cta';
+  }
   a {
     color: $white;
   }
   &__logo {
     margin-bottom: 1.875rem;
     display: inline-block;
+
+    @include breakpoints-up(large) {
+      grid-area: logo;
+    }
   }
   &__social {
     margin-bottom: 1.875rem;
+    @include breakpoints-up(large) {
+      grid-area: social;
+    }
     a {
       display: inline-block;
     }
@@ -26,12 +42,21 @@
     align-items: center;
     line-height: 2.25;
     &.col1 {
+      @include breakpoints-up(large) {
+        grid-area: links1;
+      }
     }
     &.col2 {
       margin-bottom: 1.875rem;
+      @include breakpoints-up(large) {
+        grid-area: links2;
+      }
     }
   }
   &__cta {
+    @include breakpoints-up(large) {
+      grid-area: cta;
+    }
     a.button {
       margin-bottom: 1.875rem;
     }

@@ -500,11 +500,12 @@ button:hover,
   text-align: center;
 }
 @media (min-width: 64em) {
-  .footer {
+  .footer .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr) 2fr;
+    grid-template-columns: 2fr 1fr 1fr 3fr;
     grid-template-rows: 1fr auto;
     grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
+    gap: 1rem;
     justify-items: start;
   }
 }
@@ -568,10 +569,8 @@ button:hover,
     grid-area: links2;
   }
 }
-@media (max-width: 63.9375em) {
-  .footer__links a {
-    line-height: 2.25;
-  }
+.footer__links a {
+  line-height: 2.25;
 }
 @media (min-width: 64em) {
   .footer__cta {
@@ -587,7 +586,7 @@ button:hover,
 }
 .footer__copyright {
   color: hsl(233, 8%, 62%);
-  font-size: 0.9375rem;
+  font-size: 0.825rem;
 }
 @media (min-width: 64em) {
   .footer__copyright {

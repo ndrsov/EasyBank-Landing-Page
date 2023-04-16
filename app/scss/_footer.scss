@@ -4,14 +4,17 @@
   padding: 2.5rem;
   text-align: center;
 
-  @include breakpoints-up(large) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) 2fr;
-    grid-template-rows: 1fr auto;
-    grid-template-areas:
-      'logo links1 links2 cta'
-      'social links1 links2 copyright';
-    justify-items: start;
+  .container {
+    @include breakpoints-up(large) {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 3fr;
+      grid-template-rows: 1fr auto;
+      grid-template-areas:
+        'logo links1 links2 cta'
+        'social links1 links2 copyright';
+      gap: 1rem;
+      justify-items: start;
+    }
   }
   a {
     color: $white;
@@ -67,9 +70,7 @@
       }
     }
     a {
-      @include breakpoints-down(medium) {
-        line-height: 2.25;
-      }
+      line-height: 2.25;
     }
   }
   &__cta {
@@ -86,7 +87,7 @@
   }
   &__copyright {
     color: $grayishBlue;
-    font-size: 0.9375rem;
+    font-size: 0.825rem;
 
     @include breakpoints-up(large) {
       grid-area: copyright;

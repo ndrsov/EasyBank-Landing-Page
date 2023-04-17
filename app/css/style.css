@@ -331,7 +331,7 @@ button:hover,
     background-repeat: no-repeat;
     background-position: center bottom;
     width: 150%;
-    background-size: 122%;
+    background-size: 100%;
     background-position: 0% 83%;
   }
 }

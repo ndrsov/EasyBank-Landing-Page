@@ -44,6 +44,10 @@
     a:not(:last-child) {
       margin-right: 1rem;
     }
+    a:hover {
+      transform: scale(1.06);
+      transition: all ease-in-out;
+    }
   }
 
   &__links {
@@ -71,6 +75,11 @@
     }
     a {
       line-height: 2.25;
+    }
+    a:hover {
+      transform: scale(1.06);
+      color: $limeGreen;
+      transition: all ease-in-out;
     }
   }
   &__cta {

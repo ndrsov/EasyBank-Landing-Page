@@ -542,6 +542,10 @@ button:hover,
 .footer__social a:not(:last-child) {
   margin-right: 1rem;
 }
+.footer__social a:hover {
+  transform: scale(1.06);
+  transition: all ease-in-out;
+}
 .footer__links {
   display: flex;
   flex-direction: column;
@@ -571,6 +575,11 @@ button:hover,
 }
 .footer__links a {
   line-height: 2.25;
+}
+.footer__links a:hover {
+  transform: scale(1.06);
+  color: hsl(136, 65%, 51%);
+  transition: all ease-in-out;
 }
 @media (min-width: 64em) {
   .footer__cta {
